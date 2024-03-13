@@ -1,0 +1,39 @@
+.header {
+    @apply flex flex-row items-center px-20 xl:px-40 justify-between py-2 border-gray-300 border-solid border-b-[0.5px]
+}
+
+.navbar {
+    @apply hidden lg:flex
+}
+
+.take-packet {
+    @apply p-2 max-h-10 text-14 font-medium text-link border-solid border-2 border-link bg-white rounded-md hover:text-white hover:bg-link;
+}
+
+.login-button {
+    @apply p-2 max-h-10 text-14 font-medium bg-purple-button text-white rounded-md px-4 hover:bg-purple-hover
+}
+
+.logo-box {
+    @apply flex items-center
+}
+
+.hamburger {
+    @apply px-2 mx-4 lg:hidden
+}
+
+.menu-overlay {
+    @apply fixed w-full h-0 bg-[white] transition-[height] duration-[0.5s] ease-[ease] overflow-hidden right-0 top-0;
+}
+
+.menu-overlay.open {
+    @apply h-full p-8;
+}
+
+.overlay-links {
+    @apply absolute -translate-x-2/4 -translate-y-2/4 left-2/4 top-1/4;
+}
+
+.overlay-links a {
+    @apply block text-center text-[black] no-underline mx-0 my-2.5 text-lg tracking-widest;
+}
